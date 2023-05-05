@@ -10,6 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/*--------------------Hlavička--------------------*/
 #heading {
     margin: 0;
     width: 100%;
@@ -36,6 +37,7 @@ html {
     margin: 10px 0;
 }
 
+/*-----------------About me sekce-----------------*/
 #aboutMe {
     background-color: #FFD95A;
     height: 360px;
@@ -87,6 +89,7 @@ html {
     justify-content: center;
 }
 
+/*----------------------Sekce----------------------*/
 #infoSection {
     background-color: #4C3D3D;
     padding: 15px;
@@ -103,9 +106,10 @@ html {
     padding: 10px;
     border-radius: 15px;
     font-size: 18px;
-    margin-bottom: 15px; 
+    margin-bottom: 20px; 
 }
 
+/*----------------Kontaktní informace----------------*/
 #contactList {
     display: flex;
     justify-content: center;
@@ -127,6 +131,7 @@ html {
     top: 10px;
 }
 
+/*---------------Formulář pro komentáře---------------*/
 form {
     background-color: #f7f7f7;
     border: 1px solid #ddd;
@@ -134,13 +139,13 @@ form {
     border-radius: 5px;
 }
   
-label {
+.labels {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
   
-input[type="text"], textarea {
+#name, #comment {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -150,7 +155,7 @@ input[type="text"], textarea {
     resize: none;
 }
   
-button {
+#submitBtn {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -159,6 +164,39 @@ button {
     cursor: pointer;
 }
   
-button:hover {
+#submitBtn:hover {
     background-color: #3e8e41;
+}
+
+/*----------------Uživatelské komentáře----------------*/
+#messagesHeader {
+    width: 100%;
+    padding-left: 150px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#removeMessagesBtn {
+    background-color: #eb8c09;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+#removeMessagesBtn:hover {
+    background-color: #c6801e;
+}
+
+.userComment {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.commentAuthor {
+    font-size: 22px;
+    margin-bottom: 5px;
 }

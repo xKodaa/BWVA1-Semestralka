@@ -57,17 +57,21 @@
             <h2 class="infoSectionHeaders">Zde mi můžete zanechat nějakou zprávu / recenzi webu</h2>  
             <div id="messageForm">
                 <form>
-                    <label for="name">Jméno:</label>
+                    <label for="name" class="labels">Jméno:</label>
                     <input type="text" id="name" name="name"><br><br>
-                    <label for="comment">Komentář:</label>
+                    <label for="comment" class="labels">Komentář:</label>
                     <textarea id="comment" name="comment"></textarea><br><br>
-                    <button type="button" onclick="addComment()">Odeslat</button>
+                    <button type="button" id="submitBtn" onclick="addComment()">Odeslat</button>
                 </form>
             </div>
         </div>
 
         <div class="section">
-            <h2 class="infoSectionHeaders">Zprávy od návštěvníků</h2> 
+            <h2 id="messagesHeader">Zprávy od návštěvníků
+                <button id="removeMessagesBtn" onclick="removeMessages()">Smazat zprávy</button>
+            </h2> 
+            <div id="comments"></div>
+            </div>
         </div>
 
     </div>
