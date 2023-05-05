@@ -85,3 +85,15 @@ html {
     align-items: center;
     justify-content: center;
 }
+
+#infoSection {
+    background-color: #4C3D3D;
+    padding: 15px;
+}
+
+#programmingExperiences {
+    background-color: rgba(255, 247, 212, 0.8);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 18px;
+}
