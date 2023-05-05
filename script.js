@@ -1,9 +1,19 @@
 function addComment() {
-    var name = document.getElementById('name').value;
-    var comment = document.getElementById('comment').value;
+    var nameInput = document.getElementById("name");
+    var commentInput = document.getElementById("comment");
     
+    // Ochrana proti vkládání nebezpečných kódů
+    var nameValue = nameInput.value.replace(/(<([^>]+)>)/gi, "");
+    var commentValue = commentInput.value.replace(/(<([^>]+)>)/gi, "");
+
+    // Kontrola neprázdných inputů
+    if (nameValue === "" || commentValue === "") {
+        window.alert("Vyplňte prosím oba údaje.");
+        return;
+    }
+
     // Vytvoření nového komentáře
-    var newComment = {'name': name, 'comment': comment};
+    var newComment = {'name': nameValue, 'comment': commentValue};
 
     // Načtení existujících komentářů z localStorage
     var comments = JSON.parse(localStorage.getItem('comments')) || [];
