@@ -45,17 +45,31 @@
         <div class="section">
             <h2 class="infoSectionHeaders">Kontaktní informace</h2>
             <div id="contactList">
-                <p class="contact"><img src="Resources/Images/email-icon.png" alt="icon email" class="contactIcons"><a href="jakub.kodytek@email.cz">jakub.kodytek@email.cz</a></p>
+                <p class="contact"><img src="Resources/Images/email-icon.png" alt="icon email" class="contactIcons"><a href="mailto:jakub.kodytek@email.cz" target="_blank">jakub.kodytek@email.cz</a></p>
                 <p class="contact"><img src="Resources/Images/phone-icon.png" alt="icon email" class="contactIcons">604 527 621</p>
-                <p class="contact"><img src="Resources/Images/linkedin-icon.png" alt="icon email" class="contactIcons"><a href="https://www.linkedin.com/in/jakub-kodytek-0b6313234/">LinkedIn</a></p>
-                <p class="contact"><img src="Resources/Images/facebook-icon.png" alt="icon email" class="contactIcons"><a href="https://www.facebook.com/j.kodytek/">Facebook</a> </p>
-                <p class="contact"><img src="Resources/Images/instagram-icon.png" alt="icon email" class="contactIcons"><a href="https://www.instagram.com/jakub.kodytek/?hl=cs">Instagram</a></p>
+                <p class="contact"><img src="Resources/Images/linkedin-icon.png" alt="icon email" class="contactIcons"><a href="https://www.linkedin.com/in/jakub-kodytek-0b6313234/" target="_blank">LinkedIn</a></p>
+                <p class="contact"><img src="Resources/Images/facebook-icon.png" alt="icon email" class="contactIcons"><a href="https://www.facebook.com/j.kodytek/" target="_blank">Facebook</a> </p>
+                <p class="contact"><img src="Resources/Images/instagram-icon.png" alt="icon email" class="contactIcons"><a href="https://www.instagram.com/jakub.kodytek/?hl=cs" target="_blank">Instagram</a></p>
             </div>
         </div>
 
         <div class="section">
-            <h2 class="infoSectionHeaders">V následujícím formuláři mi zde můžete zanechat nějakou zprávu / recenzi webu</h2>  
+            <h2 class="infoSectionHeaders">Zde mi můžete zanechat nějakou zprávu / recenzi webu</h2>  
+            <div id="messageForm">
+                <form>
+                    <label for="name">Jméno:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="comment">Komentář:</label>
+                    <textarea id="comment" name="comment"></textarea><br><br>
+                    <button type="button" onclick="addComment()">Odeslat</button>
+                </form>
+            </div>
         </div>
+
+        <div class="section">
+            <h2 class="infoSectionHeaders">Zprávy od návštěvníků</h2> 
+        </div>
+
     </div>
 </body>
 </html>
